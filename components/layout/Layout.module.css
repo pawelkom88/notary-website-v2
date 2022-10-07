@@ -1,0 +1,11 @@
+.container {
+  max-width: 90ch;
+  margin: 0 auto;
+  padding: 2vw 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 2vw 6vw;
+  }
+}

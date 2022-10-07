@@ -1,0 +1,81 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+  color: #ffffff;
+  background-image: url("/assets/images/index-bg1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background-image: url("/assets/images/index-bg-mobile.webp");
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.9;
+  background-color: #002b12;
+  z-index: -1;
+}
+
+.hero__heading {
+  font-family: "PlayfairDisplay", san-serif;
+  font-size: clamp(2rem, 1.2rem + 2.2vw, 5rem);
+  font-weight: normal;
+  margin-top: 18vh;
+  text-transform: uppercase;
+}
+
+.hero__paragraph {
+  max-width: 47vw;
+  font-size: clamp(1.1rem, 0.3rem + 1vw, 2rem);
+  font-weight: lighter;
+  line-height: 1.6;
+  margin: 4vh 0;
+}
+
+@media (max-width: 900px) {
+  .hero__paragraph {
+    max-width: 90vw;
+  }
+}
+
+.hero__btn {
+  margin-top: 2vh;
+  background: none;
+  border: 2px solid #ecc96e;
+  color: #ecc96e;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 575px) {
+  .hero__btn {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.hero__btn:hover {
+  background-color: #ecc96e;
+  color: #002b12;
+  transition: all 0.3s ease-in-out;
+}
+
+.latin {
+  position: absolute;
+  right: 12vw;
+  bottom: 5vh;
+  font-size: clamp(0.9rem, 0.4rem + 1vw, 2rem);
+  font-weight: lighter;
+  opacity: 0.8;
+}
+@media (max-width: 575px) {
+  .latin {
+    display: none;
+  }
+}
