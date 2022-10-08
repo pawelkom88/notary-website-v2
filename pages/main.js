@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/main/Main.module.css";
 
 export default function Main() {
@@ -37,12 +38,12 @@ export default function Main() {
         notarial activity, <span>please refer to the applicable guidance below</span>:
       </p>
       <div className={styles["info__clients"]}>
-        <a href="individual.html" className={`${styles["btn-individual"]} btn`}>
-          INDIVIDUAL CLIENTS
-        </a>
-        <a href="corporate.html" className={`${styles["btn-corporate"]} btn`}>
-          CORPORATE CLIENTS
-        </a>
+        <div className={`${styles["btn-individual"]} btn`}>
+          <Link href="individual">INDIVIDUAL CLIENTS</Link>
+        </div>
+        <div className={`${styles["btn-corporate"]} btn`}>
+          <Link href="corporate">CORPORATE CLIENTS</Link>
+        </div>
       </div>
     </>
   );
