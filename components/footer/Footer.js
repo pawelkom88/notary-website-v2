@@ -10,7 +10,6 @@ import {
   facebookIcon,
   whatsappIcon,
 } from "../../helpers/images";
-// import { ToB } from "../../helpers/files";
 
 export default function Footer() {
   return (
@@ -24,14 +23,14 @@ export default function Footer() {
           </Link>
         </li>
         <li className={styles.phone}>
-          <div className={styles['margin-right']}>
+          <div className={styles["margin-right"]}>
             <Image src={phoneIcon} alt="email Icon" />
           </div>
           <a href="tel:447401388094">+447401388094</a>
         </li>
         <li className={styles.mail}>
-        <div className={styles['margin-right']}>
-          <Image src={emailIcon} alt="email Icon" />
+          <div className={styles["margin-right"]}>
+            <Image src={emailIcon} alt="email Icon" />
           </div>
           <Link href="mailto:ps@sikorskanotary.co.uk">ps@sikorskanotary.co.uk</Link>
         </li>
@@ -62,24 +61,22 @@ export default function Footer() {
       <ul className={styles["footer__services"]}>
         <li className={styles["footer__services-title"]}>REGULATORY INFORMATION</li>
         <li className={styles["footer__services-links"]}>
-          <a href="../../assets/files/TERMS_OF_BUSINESS.pdf">1. Terms of Business</a>
+          <a href="/files/TERMS_OF_BUSINESS.pdf">1. Terms of Business</a>
         </li>
         <li className={styles["footer__services-links"]}>
-          <a href="../../assets/files/PRIVACY_NOTICE.pdf">2. Privacy Notice</a>
+          <a href="/files/PRIVACY_NOTICE.pdf">2. Privacy Notice</a>
         </li>
         <li className={styles["footer__services-links"]}>
-          <a href="../../assets/files/DATA_PROCESSING_TERMS.pdf">3. Data Processing Terms</a>
+          <a href="/files/DATA_PROCESSING_TERMS.pdf">3. Data Processing Terms</a>
         </li>
         <li className={styles["footer__services-links"]}>
-          <a href="../../assets/files/DATA_PROTECTION_POLICY.pdf">4. Data Protection Policy</a>
+          <a href="/files/DATA_PROTECTION_POLICY.pdf">4. Data Protection Policy</a>
         </li>
         <li className={styles["footer__services-links"]}>
-          <a href="../../assets/files/POLICY_APPOINTING_SUPPLIERS.pdf">
-            5. Policy Appointing Suppliers
-          </a>
+          <a href="/files/POLICY_APPOINTING_SUPPLIERS.pdf">5. Policy Appointing Suppliers</a>
         </li>
         <li className={styles["footer__services-links"]}>
-          <a href="../../assets/files/TERMS_OF_USE.pdf">6. Website Terms of Use</a>
+          <a href="/files/TERMS_OF_USE.pdf">6. Website Terms of Use</a>
         </li>
       </ul>
       <div className={styles["footer__about"]}>
