@@ -36,3 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 /assets
+/public/images
+/public/files
