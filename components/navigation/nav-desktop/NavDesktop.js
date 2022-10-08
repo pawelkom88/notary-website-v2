@@ -1,9 +1,8 @@
-import Modal from "../../modal/Modal";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { logoPng } from "../../../helpers/images";
+import Modal from "../../modal/Modal";
 import styles from "./NavDesktop.module.css";
+import Logo from "../../logo/Logo";
 
 export default function NavDesktop() {
   const [showModal, setShowModal] = useState(false);
@@ -15,29 +14,25 @@ export default function NavDesktop() {
   return (
     <>
       <nav className={styles["nav-bar"]}>
-        <Link href="/">
-          <div className={styles.logo}>
-            <Image width={66} height={66} src={logoPng} alt="Sikorska notary logo" />
-          </div>
-        </Link>
+        <Logo />
         <ul className={styles["nav-links"]}>
           <li className={styles["nav-link"]}>
-            <a href="service">Notarial service</a>
+            <Link href="service">Notarial service</Link>
           </li>
           <li className={styles["nav-link"]}>
-            <a href="legislation">Apostille & Legislation</a>
+            <Link href="legislation">Apostille & Legislation</Link>
           </li>
           <li className={styles["nav-link"]}>
-            <a href="fees">Fees</a>
+            <Link href="fees">Fees</Link>
           </li>
           <li className={styles["nav-link"]}>
-            <a href="legal">Regulatory</a>
+            <Link href="legal">Regulatory</Link>
           </li>
           <li className={styles["nav-link"]}>
-            <a href="index#contact">Contact</a>
+            <Link href="index#contact">Contact</Link>
           </li>
           <li className={styles["nav-link"]}>
-            <a href="blog">Blog</a>
+            <Link href="blog">Blog</Link>
           </li>
         </ul>
         <button onClick={handleModal} type="button" className={`${styles["cta-btn"]} btn`}>
