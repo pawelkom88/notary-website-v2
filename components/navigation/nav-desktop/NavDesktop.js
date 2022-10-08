@@ -3,7 +3,7 @@ import Image from "next/image";
 import { logoPng } from "../../../helpers/images";
 import styles from "./NavDesktop.module.css";
 
-export default function NavDesktop() {
+export default function NavDesktop({ handleModal }) {
   return (
     <>
       <header>
@@ -15,22 +15,22 @@ export default function NavDesktop() {
           </Link>
           <ul className={styles["nav-links"]}>
             <li className={styles["nav-link"]}>
-              <a href="service.html">Notarial service</a>
+              <a href="service">Notarial service</a>
             </li>
             <li className={styles["nav-link"]}>
-              <a href="legislation.html">Apostille & Legislation</a>
+              <a href="legislation">Apostille & Legislation</a>
             </li>
             <li className={styles["nav-link"]}>
-              <a href="fees.html">Fees</a>
+              <a href="fees">Fees</a>
             </li>
             <li className={styles["nav-link"]}>
-              <a href="legal.html">Regulatory</a>
+              <a href="legal">Regulatory</a>
             </li>
             <li className={styles["nav-link"]}>
-              <a href="index.html#contact">Contact</a>
+              <a href="index#contact">Contact</a>
             </li>
           </ul>
-          <button type="button" className={`${styles["cta-btn"]} btn`}>
+          <button onClick={handleModal} type="button" className={`${styles["cta-btn"]} btn`}>
             Make an enquiry
           </button>
         </nav>
