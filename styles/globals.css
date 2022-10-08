@@ -170,3 +170,59 @@ h3 {
     scroll-behavior: auto;
   }
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.list-style-letters {
+  list-style: upper-alpha;
+  margin-left: 1rem;
+}
+
+.list-style-letters li {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.list-item {
+  list-style-type: " —";
+  margin: 1rem 0 0 2rem;
+  padding-left: 1rem;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: clamp(0.625rem, 0.1563rem + 2.5vw, 0.9375rem);
+  list-style-type: none;
+  margin: 4rem 0;
+}
+
+@media (max-width: 900px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li::after {
+  margin-right: 10px;
+  content: " / ";
+}
+
+.breadcrumb .current {
+  font-weight: bold;
+}
+
+.padding {
+  padding: 2vh 0;
+}
