@@ -2,7 +2,7 @@
   min-height: 100vh;
   position: relative;
   color: #ffffff;
-  background-image: url("/assets/images/index-bg1.webp");
+  background-image: url("../../public/images/index-bg1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -10,7 +10,7 @@
 
 @media (max-width: 900px) {
   .hero {
-    background-image: url("/assets/images/index-bg-mobile.webp");
+    background-image: url("../../public/images/index-bg-mobile.webp");
   }
 }
 

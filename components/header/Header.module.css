@@ -1,0 +1,20 @@
+.header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2vw 12vw 1vw;
+}
+@media (max-width: 1441px) {
+  .header {
+    padding: 2vw 8vw;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 2vw 6vw;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    padding: 4vw 8vw;
+  }
+}
