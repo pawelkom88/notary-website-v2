@@ -5,19 +5,19 @@ export default function NavMobile() {
     <div role="navigation" className="mobile__menu" aria-label="mobile menu">
       <ul className="mobile__menu-links">
         <li className="mobile__menu-link">
-          <a href="service.html">Notarial service</a>
+          <a href="service">Notarial service</a>
         </li>
         <li className="mobile__menu-link">
-          <a href="legislation.html">Apostille & Legislation</a>
+          <a href="legislation">Apostille & Legislation</a>
         </li>
         <li className="mobile__menu-link">
-          <a href="fees.html">Fees & Disbursements</a>
+          <a href="fees">Fees & Disbursements</a>
         </li>
         <li className="mobile__menu-link">
-          <a href="legal.html">Legal & Regulatory Information</a>
+          <a href="legal">Legal & Regulatory Information</a>
         </li>
         <li className="mobile__menu-link">
-          <a href="index.html#contact">Contact</a>
+          <a href="index#contact">Contact</a>
         </li>
       </ul>
       <p className="opening-times">Monday - Friday 9.00 am until 5.00 pm</p>
