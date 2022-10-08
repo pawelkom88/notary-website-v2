@@ -20,7 +20,7 @@ export default function Contact() {
         <br />
         <p className="paragraph">
           To enquire about my services please{" "}
-          <a className={styles["underline"]} href="mailto:ps@sikorskanotary.co.uk">
+          <a className='underline' href="mailto:ps@sikorskanotary.co.uk">
             {" "}
             email me
           </a>{" "}
