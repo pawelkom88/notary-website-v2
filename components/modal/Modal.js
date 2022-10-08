@@ -4,25 +4,22 @@ import FocusLock from "react-focus-lock";
 import styles from "./Modal.module.css";
 
 export default function Modal({ showModal, handleModal }) {
-  function handleKeyDown(e) {
-    if (e.keyCode === 13) {
-      handleModal();
-    }
+  function handleKeyDown(e, key) {
+    if (e.keyCode === key) handleModal();
   }
 
   return (
     <Backdrop handleModal={handleModal}>
       <FocusLock>
         <div
-          onClick={e => {
-            e.stopPropagation();
-          }}
+          onKeyDown={e => handleKeyDown(e, 27)}
+          onClick={e => e.stopPropagation()}
           className={`${showModal && styles["modal-active"]} ${styles.modal}`}
           role="alertdialog"
           aria-modal="true"
           aria-labelledby="dialog_label">
           <span
-            onKeyDown={handleKeyDown}
+            onKeyDown={e => handleKeyDown(e, 13)}
             onClick={handleModal}
             className={styles.close}
             role="button"
