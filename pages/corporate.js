@@ -1,15 +1,15 @@
-import NavDesktop from "../components/navigation/nav-desktop/NavDesktop";
+import Nav from "../components/navigation/Nav";
 import Layout from "../components/layout/Layout";
 import Footer from "../components/footer/Footer";
 import MetaData from "../components/meta/MetaData";
 import Header from "../components/header/Header";
 
-export default function Corporate() {
+export default function CorporateClient() {
   return (
     <>
       <MetaData title="Sikorska Notary - Corporate clients" />
       <Header applyStyle={true}>
-        <NavDesktop />
+        <Nav />
       </Header>
       <Layout>
         <section className="padding">
