@@ -1,0 +1,43 @@
+.mobile__menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: var(--white);
+  color: var(--primary);
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid var(--primary);
+}
+
+.mobile__menu-links {
+  margin: 4rem;
+}
+
+.mobile__menu-link {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.mobile__menu-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__menu-contact a {
+  margin: 1.5rem;
+  width: 30px;
+}
+
+.mobile__menu .opening-times {
+  margin: 1.5rem 0;
+}
+
+.menu-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
