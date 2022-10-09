@@ -1,9 +1,13 @@
 .contact {
   min-height: 70vh;
   padding: 2vh 0;
-  margin-top: 4rem;
 }
 
+@media (min-width: 1200px) {
+  .contact {
+    margin-top: 4rem;
+  }
+}
 .contact__about {
   margin: 4rem auto;
 }
