@@ -8,6 +8,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap"
           rel="stylesheet"
         />
+        <link rel="canonical" href="https://www.sikorskanotary.co.uk" />
       </Head>
       <body>
         <Main />
