@@ -95,7 +95,7 @@ select {
 }
 
 .heading {
-  font-family: "Playfair Display", san-serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(1.4rem, calc(12px + 1.5vw), 1.6rem);
   color: var(--secondary);
   text-transform: uppercase;
