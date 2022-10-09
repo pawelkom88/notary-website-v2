@@ -17,7 +17,7 @@ export default function Hamburger() {
         <div
           onClick={handleMenu}
           role="button"
-          className={`${showMenu && styles["hamburger-open"]} ${styles.hamburger}`}
+          className={styles.hamburger}
           tabIndex="0"
           aria-expanded="false"
           aria-label="show navigation menu">
@@ -26,7 +26,7 @@ export default function Hamburger() {
           <span className={`${showMenu && styles["open"]} ${styles.line}`}></span>
         </div>
       </div>
-      {showMenu && <NavMobile />}
+      <NavMobile showMenu={showMenu} />
     </>
   );
 }

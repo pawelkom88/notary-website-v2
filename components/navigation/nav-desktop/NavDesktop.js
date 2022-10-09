@@ -29,7 +29,7 @@ export default function NavDesktop() {
             <Link href="legal">Regulatory</Link>
           </li>
           <li className={styles["nav-link"]}>
-            <Link href="index#contact">Contact</Link>
+            <Link href="/#contact">Contact</Link>
           </li>
           <li className={styles["nav-link"]}>
             <Link href="blog">Blog</Link>
@@ -39,7 +39,7 @@ export default function NavDesktop() {
           Make an enquiry
         </button>
       </nav>
-      {showModal && <Modal showModal={showModal} handleModal={handleModal} />}
+      <Modal showModal={showModal} handleModal={handleModal} />
     </>
   );
 }

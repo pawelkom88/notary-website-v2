@@ -3,11 +3,11 @@ import Link from "next/link";
 import { emailIcon, phoneIcon } from "../../../helpers/images";
 import styles from "./NavMobile.module.css";
 
-export default function NavMobile() {
+export default function NavMobile({ showMenu }) {
   return (
     <div
       role="navigation"
-      className={`${styles["mobile__menu"]} ${styles["menu-open"]}`}
+      className={`${styles["mobile__menu"]} ${showMenu ? styles["menu-open"] : ""}`}
       aria-label="mobile menu">
       <ul className={styles["mobile__menu-links"]}>
         <li className={styles["mobile__menu-link"]}>
@@ -23,11 +23,12 @@ export default function NavMobile() {
           <Link href="legal">Legal & Regulatory Information</Link>
         </li>
         <li className={styles["mobile__menu-link"]}>
-          <Link href="home">Contact</Link>
+          <Link href="/#contact">Contact</Link>
         </li>
       </ul>
-      <p className="opening-times">Monday - Friday 9.00 am until 5.00 pm</p>
       <div className={styles["mobile__menu-contact"]}>
+        <p>Monday - Friday</p>
+        <p>9.00 am until 5.00 pm</p>
         <a href="tel:447401388094" aria-label="Call Patrycja Sikorska">
           <Image src={emailIcon} alt="email Icon" />
         </a>
