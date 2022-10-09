@@ -2,8 +2,10 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className={styles["contact"]}>
-      <h2 className="heading">Mobile Notary Service</h2>
+    <section className={styles["contact"]}>
+      <h2 id="contact" className="heading">
+        Mobile Notary Service
+      </h2>
       <article className={styles["contact__about"]}>
         <h3 className="info__alert">Contact me</h3>
         <p className="paragraph">
@@ -20,7 +22,7 @@ export default function Contact() {
         <br />
         <p className="paragraph">
           To enquire about my services please{" "}
-          <a className='underline' href="mailto:ps@sikorskanotary.co.uk">
+          <a className="underline" href="mailto:ps@sikorskanotary.co.uk">
             {" "}
             email me
           </a>{" "}
