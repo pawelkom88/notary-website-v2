@@ -1,6 +1,6 @@
 import useRedirect from "../../hooks/useRedirect";
 import Image from "next/image";
-import { logoPng } from "../../helpers/images";
+import  logoWebp  from "../../public/images/logo-webp.webp";
 import styles from "./custom.module.css";
 
 export default function NotFound({ message, time, children }) {
@@ -8,7 +8,7 @@ export default function NotFound({ message, time, children }) {
 
   return (
     <div className={styles.container}>
-      <Image src={logoPng} alt="Sikorska notary logo" />
+      <Image src={logoWebp} alt="Sikorska notary logo" />
       <h1 className={`${styles.heading} heading`}>{message}</h1>
       <br />
       {children}
