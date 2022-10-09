@@ -31,7 +31,8 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: "Roboto", "Calibri", sans-serif;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   text-rendering: optimizeSpeed;
 }
@@ -94,7 +95,7 @@ select {
 }
 
 .heading {
-  font-family: "PlayfairDisplay", san-serif;
+  font-family: "Playfair Display", san-serif;
   font-size: clamp(1.4rem, calc(12px + 1.5vw), 1.6rem);
   color: var(--secondary);
   text-transform: uppercase;
@@ -108,7 +109,7 @@ h3 {
 }
 
 .paragraph {
-  font-size: clamp(1rem, calc(12px + 0.5vw), 1.2rem);
+  font-size: clamp(1rem, calc(10px + 0.5vw), 1.2rem);
   font-weight: 300;
   line-height: 1.8;
   letter-spacing: 1.2px;

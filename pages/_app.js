@@ -1,3 +1,5 @@
+import "@fontsource/playfair-display";
+import "@fontsource/lato";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
