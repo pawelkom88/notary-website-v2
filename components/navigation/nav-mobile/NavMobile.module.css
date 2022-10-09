@@ -14,8 +14,9 @@
   overflow: hidden;
   text-align: center;
   opacity: 0;
+  visibility: hidden;
   border: 2px solid var(--primary);
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .mobile__menu-links {
@@ -45,5 +46,6 @@
 
 .menu-open {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
