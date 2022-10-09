@@ -9,12 +9,12 @@ export default function Modal({ showModal, handleModal }) {
   }
 
   return (
-    <Backdrop handleModal={handleModal}>
+    <Backdrop showModal={showModal} handleModal={handleModal}>
       <FocusLock>
         <div
           onKeyDown={e => handleKeyDown(e, 27)}
           onClick={e => e.stopPropagation()}
-          className={`${showModal && styles["modal-active"]} ${styles.modal}`}
+          className={`${showModal ? styles["modal-active"] : ""} ${styles.modal}`}
           role="alertdialog"
           aria-modal="true"
           aria-labelledby="dialog_label">
