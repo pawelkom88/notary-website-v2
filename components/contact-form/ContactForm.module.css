@@ -43,18 +43,12 @@
   }
 }
 
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder,
+.form input::placeholder,
+.form textarea::placeholder,
 .form input::-moz-placeholder,
 .form textarea::-moz-placeholder {
-  opacity: 0.4;
-}
-
-.form input:-ms-input-placeholder,
-.form textarea:-ms-input-placeholder {
-  opacity: 0.4;
-}
-
-.form input::placeholder,
-.form textarea::placeholder {
   opacity: 0.4;
 }
 
@@ -63,17 +57,19 @@
   .form textarea::-moz-placeholder {
     font-size: 0.8rem;
   }
+
   .form input:-ms-input-placeholder,
   .form textarea:-ms-input-placeholder {
     font-size: 0.8rem;
   }
+
   .form input::placeholder,
   .form textarea::placeholder {
     font-size: 0.8rem;
   }
 }
 
-.form .form_btn {
+.form_btn {
   color: var(--white);
   background-color: var(--secondary);
   border: 2px solid var(--white);
@@ -81,7 +77,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.form .form_btn:hover {
+.form_btn:hover {
   background-color: var(--white);
   color: var(--secondary);
   border: 2px solid var(--secondary);

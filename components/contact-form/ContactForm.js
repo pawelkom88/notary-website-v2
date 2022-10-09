@@ -3,7 +3,7 @@ import styles from "./ContactForm.module.css";
 export default function ContactForm() {
   return (
     <form className={styles.form} action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="redirect" value="https://sikorskanotary.co.uk/success.html" />
+      <input type="hidden" name="redirect" value="https://sikorskanotary.co.uk/success" />
       <input type="hidden" name="subject" value="New message from your website" />
       <input type="hidden" name="apikey" value="e78b38a7-90c7-4e93-9b00-da8a681984f6" />
       <label htmlFor="name">Name:</label>
