@@ -103,15 +103,16 @@ select {
 }
 
 h3 {
+  margin: 1rem 0;
   text-align: center;
 }
 
 .paragraph {
-  font-size: clamp(1rem, calc(12px + 0.5vw), 1.5rem);
+  font-size: clamp(1rem, calc(12px + 0.5vw), 1.2rem);
   font-weight: 300;
   line-height: 1.8;
   letter-spacing: 1.2px;
-  text-indent: 1rem;
+  text-indent: 0.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -129,6 +130,10 @@ h3 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 3rem;
+}
+
+ol {
+  font-size: clamp(1rem, calc(12px + 0.5vw), 1.2rem);
 }
 
 .visible-hidden {

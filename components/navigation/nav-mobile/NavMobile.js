@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { emailIcon, phoneIcon } from "../../../helpers/images";
+import emailIcon from "../../../public/images/email-icon.png";
+import phoneIcon from "../../../public/images/phone-icon.png";
 import styles from "./NavMobile.module.css";
 
 export default function NavMobile({ showMenu }) {
@@ -24,6 +25,9 @@ export default function NavMobile({ showMenu }) {
         </li>
         <li className={styles["mobile__menu-link"]}>
           <Link href="/#contact">Contact</Link>
+        </li>
+        <li className={styles["mobile__menu-link"]}>
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
       <div className={styles["mobile__menu-contact"]}>
