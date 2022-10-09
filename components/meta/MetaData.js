@@ -19,7 +19,7 @@ export default function MetaData({ title }) {
       <meta name="title" content="Sikorska Notary - mobile notary in Bristol and South West" />
       <meta
         name="description"
-        content="Sikorska Notary is a mobile notary providing a full range of notarial services for clients at their convenience. Whether it is in your office, home, place of business or residence, I am able to meet you at any place to help you in the most efficient way in your notarial matter."
+        content="Sikorska Notary is a mobile notary providing a full range of notarial services for clients at their convenience. Whether it is in your office, home, place of business or residence."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://sikorskanotary.co.uk/social-media-card.png" />
