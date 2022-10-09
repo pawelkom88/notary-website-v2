@@ -1,15 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
-import {
-  logoPng,
-  facultyLogo,
-  emailIcon,
-  phoneIcon,
-  LinkedInIcon,
-  facebookIcon,
-  whatsappIcon,
-} from "../../helpers/images";
+import logoWebp from "../../public/images/logo-webp.webp";
+import facultyLogo from "../../public/images/faculty-logo-webp.webp";
+import emailIcon from "../../public/images/email-icon.png";
+import phoneIcon from "../../public/images/phone-icon.png";
+import linkedInIcon from "../../public/images/linkedin-icon.png";
+import facebookIcon from "../../public/images/fb-icon.png";
+import whatsappIcon from "../../public/images/whatsapp.svg";
 
 export default function Footer() {
   return (
@@ -18,7 +16,7 @@ export default function Footer() {
         <li>
           <Link href="/">
             <div className={styles["footer__contact-logo"]}>
-              <Image width={84} height={84} src={logoPng} alt="Sikorska notary logo" />
+              <Image width={84} height={84} src={logoWebp} alt="Sikorska notary logo" />
             </div>
           </Link>
         </li>
@@ -54,7 +52,7 @@ export default function Footer() {
             href="https://uk.linkedin.com/in/patrycja-sikorska-86145b145"
             target="_blank"
             rel="noreferrer">
-            <Image src={LinkedInIcon} alt="linkedIn Icon" />
+            <Image src={linkedInIcon} alt="linkedIn Icon" />
           </a>
         </li>
       </ul>
