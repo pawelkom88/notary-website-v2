@@ -1,0 +1,20 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--primary);
+  font-size: 1.5rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 5vw;
+}
+
+.heading {
+  color: var(--teriary);
+}
+
+.timer {
+  font-size: 2rem;
+}
