@@ -33,7 +33,7 @@
 
 .hero__paragraph {
   max-width: 47vw;
-  font-size: clamp(1.1rem, 0.3rem + 1vw, 2rem);
+  font-size: clamp(1.1rem, 0.2rem + 1vw, 2rem);
   font-weight: lighter;
   line-height: 1.6;
   margin: 4vh 0;
