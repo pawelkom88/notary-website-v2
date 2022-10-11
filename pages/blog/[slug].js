@@ -1,11 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "../../components/navigation/Nav";
-import Footer from "../../components/footer/Footer";
 import MetaData from "../../components/meta/MetaData";
-import Header from "../../components/header/Header";
-import { createClient } from "contentful";
 import Layout from "../../components/layout/Layout";
+import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 const client = createClient({
@@ -40,14 +37,9 @@ export default function BlogDetails({ post }) {
   const { url } = thumbnail.fields.file;
   const { width, height } = featuredImage.fields.file.details.image;
 
-  console.log(featuredImage.fields.file);
-
   return (
     <>
       <MetaData title={`Sikorska Notary - blog - ${title}`} />
-      <Header applyStyle={true}>
-        <Nav />
-      </Header>
       <Layout>
         <h1 style={{ margin: "2rem 0" }} className="heading">
           {title}
@@ -69,7 +61,6 @@ export default function BlogDetails({ post }) {
           <Link href="../blog">back to blog</Link>
         </span>
       </Layout>
-      <Footer />
     </>
   );
 }
