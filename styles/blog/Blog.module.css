@@ -1,0 +1,32 @@
+.container {
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  height: 5rem;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer__contact {
+  width: min(90%, 600px);
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-inline: auto;
+}

@@ -1,17 +1,18 @@
-.card__header {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
 .card {
+  width: min(90%, 400px);
+  max-height: 600px;
   display: flex;
   flex-direction: column;
-  width: clamp(28rem, calc(20rem + 2vw), 22rem);
   overflow: hidden;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   background-color: var(--white);
+}
+
+.card__header {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .card-heading {
