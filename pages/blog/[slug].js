@@ -3,7 +3,6 @@ import Link from "next/link";
 import MetaData from "../../components/meta/MetaData";
 import Layout from "../../components/layout/Layout";
 import { createClient } from "contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -33,7 +32,6 @@ export async function getStaticProps({ params }) {
 
 export default function BlogDetails({ post }) {
   const { title, slug, thumbnail, featuredImage, content, date } = post.fields;
-
   const { url } = thumbnail.fields.file;
   const { width, height } = featuredImage.fields.file.details.image;
 
@@ -51,7 +49,7 @@ export default function BlogDetails({ post }) {
           </figcaption>
         </figure>
         <div style={{ margin: "2rem 0" }} className="paragraph">
-          {documentToReactComponents(content)}
+          {content}
         </div>
         <div style={{ margin: "2rem 0" }}>
           <h5>Patrycja Sikorska</h5>

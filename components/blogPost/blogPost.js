@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./blogPost.module.css";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export default function blogPost({ post }) {
   const { title, slug, thumbnail, content, date } = post.fields;
@@ -15,7 +14,7 @@ export default function blogPost({ post }) {
       </div>
       <div className={styles["card__body"]}>
         <h4 className={`${styles["card-heading"]} heading`}>{title}</h4>
-        <div className="paragraph">{documentToReactComponents(content)}...</div>
+        <div className="paragraph">{content.slice(0,80)}...</div>
         <span className="underline">
           <Link href={"/blog/" + slug}>read more</Link>
         </span>
@@ -31,5 +30,3 @@ export default function blogPost({ post }) {
     </div>
   );
 }
-
-
