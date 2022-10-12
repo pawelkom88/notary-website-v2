@@ -1,6 +1,6 @@
 .card {
   width: min(90%, 400px);
-  max-height: 600px;
+  /* max-height: 600px; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
