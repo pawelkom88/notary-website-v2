@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import MetaData from "../../components/meta/MetaData";
 import Layout from "../../components/layout/Layout";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import { createClient } from "contentful";
 
 const client = createClient({
@@ -18,7 +20,7 @@ export async function getStaticPaths() {
     };
   });
 
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
@@ -27,10 +29,21 @@ export async function getStaticProps({ params }) {
     "fields.slug": params.slug,
   });
 
-  return { props: { post: items[0] } };
+  if (!items.length) {
+    return {
+      redirect: {
+        destination: "Home",
+        permanent: false,
+      },
+    };
+  }
+
+  return { props: { post: items[0] }, revalidate: 10 };
 }
 
 export default function BlogDetails({ post }) {
+  if (!post) return <Skeleton count={5} />;
+
   const { title, slug, thumbnail, featuredImage, content, date } = post.fields;
   const { url } = thumbnail.fields.file;
   const { width, height } = featuredImage.fields.file.details.image;
