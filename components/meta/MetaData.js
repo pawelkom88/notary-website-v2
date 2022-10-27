@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function MetaData({ title, featuredImage }) {
+export default function MetaData({ title, url}) {
   return (
     <Head>
       <link
@@ -22,7 +22,7 @@ export default function MetaData({ title, featuredImage }) {
         content="Sikorska Notary is a mobile notary providing a full range of notarial services for clients at their convenience. Whether it is in your office, home, place of business or residence."
       />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={featuredImage} />
+      <meta property="og:url" content={"https:" + url} />
       <meta
         property="og:title"
         content="Sikorska Notary - mobile notary in Bristol and South West"
@@ -31,9 +31,9 @@ export default function MetaData({ title, featuredImage }) {
         property="og:description"
         content="Sikorska Notary is a mobile notary providing a full range of notarial services for clients at their convenience. Whether it is in your office, home, place of business or residence, I am able to meet you at any place to help you in the most efficient way in your notarial matter."
       />
-      <meta property="og:image" content={featuredImage} />
+      <meta property="og:image" content={"https:" + url} />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={featuredImage} />
+      <meta property="twitter:url" content={"https:" + url} />
       <meta
         property="twitter:title"
         content="Sikorska Notary - mobile notary in Bristol and South West"
@@ -42,7 +42,7 @@ export default function MetaData({ title, featuredImage }) {
         property="twitter:description"
         content="Sikorska Notary is a mobile notary providing a full range of notarial services for clients at their convenience. Whether it is in your office, home, place of business or residence, I am able to meet you at any place to help you in the most efficient way in your notarial matter."
       />
-      <meta property="twitter:image" content={featuredImage} />
+      <meta property="twitter:image" content={"https:" + url} />
       <title>{title}</title>
     </Head>
   );
