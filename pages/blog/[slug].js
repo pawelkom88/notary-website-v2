@@ -39,7 +39,7 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  return { props: { post: items[0] }, revalidate: 10 };
+  return { props: { post: items[0] }, revalidate: 60 };
 }
 
 export default function BlogDetails({ post }) {
