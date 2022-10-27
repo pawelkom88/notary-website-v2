@@ -30,3 +30,22 @@
   align-items: center;
   margin-inline: auto;
 }
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.language-options {
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.language-options * {
+  cursor: pointer;
+}

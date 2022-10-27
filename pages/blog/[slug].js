@@ -45,10 +45,9 @@ export async function getStaticProps({ params }) {
 export default function BlogDetails({ post }) {
   if (!post) return <Skeleton count={5} />;
 
-  const { title, slug, thumbnail, featuredImage, content, date } = post.fields;
+  const { title, slug, thumbnail, featuredImage, content1, date } = post.fields;
   const { url } = thumbnail.fields.file;
   const { width, height } = featuredImage.fields.file.details.image;
-
   return (
     <>
       <MetaData title={`Sikorska Notary - blog - ${title}`} />
@@ -63,7 +62,7 @@ export default function BlogDetails({ post }) {
           </figcaption>
         </figure>
         <div style={{ margin: "2rem 0" }} className="paragraph">
-          {documentToReactComponents(content)}
+          {documentToReactComponents(content1)}
         </div>
         <div style={{ margin: "2rem 0" }}>
           <h5>Patrycja Sikorska</h5>
