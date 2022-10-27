@@ -50,7 +50,7 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage.fields.file.details.image;
   return (
     <>
-      <MetaData title={`Sikorska Notary - blog - ${title}`} card={featuredImage}/>
+      <MetaData title={`Sikorska Notary - blog - ${title}`} card={url}/>
       <Layout>
         <h1 style={{ margin: "2rem 0" }} className="heading">
           {title}
