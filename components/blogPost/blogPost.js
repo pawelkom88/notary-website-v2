@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import styles from "./blogPost.module.css";
 
 export default function blogPost({ post }) {
-  const { title, slug, thumbnail, content, date } = post.fields;
+  const { title, slug, thumbnail, date } = post.fields;
   const { url } = thumbnail.fields.file;
   const { width, height } = thumbnail.fields.file.details.image;
 
@@ -14,7 +15,7 @@ export default function blogPost({ post }) {
       </div>
       <div className={styles["card__body"]}>
         <h4 className={`${styles["card-heading"]} heading`}>{title}</h4>
-        <div className="paragraph">{content.slice(0,80)}...</div>
+        {/* <div className="paragraph">{content.slice(0,80)}...</div> */}
         <span className="underline">
           <Link href={"/blog/" + slug}>read more</Link>
         </span>

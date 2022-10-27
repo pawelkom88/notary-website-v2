@@ -5,6 +5,7 @@ import Layout from "../../components/layout/Layout";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { createClient } from "contentful";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -62,7 +63,7 @@ export default function BlogDetails({ post }) {
           </figcaption>
         </figure>
         <div style={{ margin: "2rem 0" }} className="paragraph">
-          {content}
+          {documentToReactComponents(content)}
         </div>
         <div style={{ margin: "2rem 0" }}>
           <h5>Patrycja Sikorska</h5>
