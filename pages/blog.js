@@ -23,12 +23,13 @@ export async function getStaticProps() {
   return {
     props: {
       posts: response.items,
-      revalidate: 10,
+      revalidate: 60,
     },
   };
 }
 
 export default function Blog({ posts }) {
+
   return (
     <>
       <MetaData title="Sikorska Notary - Blog" />

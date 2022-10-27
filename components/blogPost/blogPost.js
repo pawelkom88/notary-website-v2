@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import styles from "./blogPost.module.css";
 
 export default function blogPost({ post }) {
