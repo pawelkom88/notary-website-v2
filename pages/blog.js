@@ -48,28 +48,29 @@ export default function Blog({ posts }) {
         </div>
       </Header>
       <h1 className="heading">Notary Blog</h1>
-      {posts.length === 0 && <h3>There are no posts</h3>}
-
-      {/* Filter POL/ENG */}
-      <div className={styles.language}>
-        <h3>Choose language</h3>
-        <div className={styles["language-options"]}>
-          <Image
-            onClick={() => handleLanguage(false)}
-            width={50}
-            height={50}
-            src={polishFlag}
-            alt="Polish flag"
-          />
-          <Image
-            onClick={() => handleLanguage(true)}
-            width={50}
-            height={50}
-            src={ukFlag}
-            alt="UK flag"
-          />
+      {posts.length === 0 ? (
+        <h3>There are no posts</h3>
+      ) : (
+        <div className={styles.language}>
+          <h3>Choose language</h3>
+          <div className={styles["language-options"]}>
+            <Image
+              onClick={() => handleLanguage(false)}
+              width={50}
+              height={50}
+              src={polishFlag}
+              alt="Polish flag"
+            />
+            <Image
+              onClick={() => handleLanguage(true)}
+              width={50}
+              height={50}
+              src={ukFlag}
+              alt="UK flag"
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       <div className={`${styles.container} padding`}>
         {filteredPosts.map(post => {
