@@ -48,6 +48,30 @@ export default function Blog({ posts }) {
         </div>
       </Header>
       <h1 className="heading">Notary Blog</h1>
+      <br />
+
+      <p className="paragraph">
+        Hello and welcome to Sikorska Notary Blog, where I share my insights and tips on various
+        notarial matters. My name is Patrycja Sikorska and I am a mobile notary in Bristol and the
+        South West of England.
+      </p>
+      <p className="paragraph">
+        As a notary, my main function is to certify the authenticity of documents, signatures and
+        identities for use in foreign countries. I also advise clients on the formalities and
+        requirements of different legal systems and jurisdictions. I deal with both individual and
+        corporate clients, and each case is different and treated individually.
+      </p>
+
+      <p className="paragraph">
+        In this blog, I will share with you some of the typical stages of notarial activities, the
+        documents and evidence required for different types of transactions, the fees and
+        disbursements involved, and the legalisation process for different countries. I will also
+        answer some of the frequently asked questions and common misconceptions about notaries and
+        their role. I hope you will find this blog informative and helpful, and if you have any
+        questions or comments, please feel free to contact me.
+      </p>
+
+      <br />
       {posts.length === 0 ? (
         <h3>There are no posts</h3>
       ) : (
